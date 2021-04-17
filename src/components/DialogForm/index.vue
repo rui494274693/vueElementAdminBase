@@ -2,16 +2,16 @@
   <el-dialog :title="title" :visible.sync="isOpen" :before-close="closeDialog">
     <div style="height: 400px;overflow: auto;">
       <el-form ref="dataForm" :rules="rules" :model="model" label-position="right" label-width="120px" label-suffix=":">
-        <el-form-item :label="item.label" v-for="item in temp" :prop="item.code" v-show="item.show==undefined || item.show==true">
+        <el-form-item :label="item.label" v-for="item in temp" :key='item.code' :prop="item.code" v-show="item.show==undefined || item.show==true">
           <el-input v-if="item.type==undefined || item.type=='input'" v-model="item.value" :placeholder="'请输入'+item.label" />
           <el-input v-if="item.type=='password'" type="password" v-model="item.value" :placeholder="'请输入'+item.label" />
           <el-input v-if="item.type=='textarea'" v-model="item.value" :autosize="{ minRows: 2, maxRows: 4}" type="textarea"
             :placeholder="'请输入'+item.label" />
           <el-radio-group v-model="item.value" v-if="item.type=='radio'">
-            <el-radio :label="op.value" v-for="op in item.options">{{op.label}}</el-radio>
+            <el-radio :label="op.value" v-for="op in item.options" :key='op.code'>{{op.label}}</el-radio>
           </el-radio-group>
                  <el-checkbox-group v-model="item.value" v-if="item.type=='checkbox'">
-            <el-checkbox :label="op.value" v-for="op in item.options">{{op.label}}</el-checkbox>
+            <el-checkbox :label="op.value" v-for="op in item.options" :key='op.code'>{{op.label}}</el-checkbox>
           </el-checkbox-group>
 
           <el-select v-if="item.type=='select'" :multiple="item.multiple" v-model="item.value" clearable :placeholder="'请选择'+item.label">
