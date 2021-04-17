@@ -70,6 +70,9 @@ npm run build:stage
 npm run build:prod
 ```
 
+这个只是前端的项目，还需要启动一个模拟后台接口的项目，地址是
+<a href="https://github.com/rui494274693/vueElementAdminServer">vueElementAdminServer</a>
+
 
 
 
