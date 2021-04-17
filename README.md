@@ -1,4 +1,4 @@
-# 此框架基于PanJiaChen大佬的<a href="https://github.com/PanJiaChen/vue-element-admin">vue-element-admin</a>修改而成，在使用前建议先看看大佬的几篇文档<a href="https://juejin.cn/post/6844903476661583880">手摸手，带你用vue撸后台 系列一（基础篇）</a>,文档会帮助你避免掉很多问题！
+# 此框架基于PanJiaChen大佬的<a target="_blank" href="https://github.com/PanJiaChen/vue-element-admin">vue-element-admin</a>修改而成，在使用前建议先看看大佬的几篇文档<a target="_blank" href="https://juejin.cn/post/6844903476661583880">手摸手，带你用vue撸后台 系列一（基础篇）</a>,文档会帮助你避免掉很多问题！
 <img  src="https://files.catbox.moe/yi2cgv.png">
 
 ## 菜单权限由后台控制
@@ -49,7 +49,7 @@
 git clone https://github.com/rui494274693/vueElementAdminBase.git
 
 # enter the project directory
-cd vueElementAdminBase
+cd vueElementAdminBase-master
 
 # install dependency
 npm install
@@ -71,7 +71,7 @@ npm run build:prod
 ```
 
 这个只是前端的项目，还需要启动一个模拟后台接口的项目，地址是
-<a href="https://github.com/rui494274693/vueElementAdminServer">vueElementAdminServer</a>
+<a target="_blank" href="https://github.com/rui494274693/vueElementAdminServer">vueElementAdminServer</a>
 
 
 
