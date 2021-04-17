@@ -41,6 +41,8 @@
   <img  src="https://files.catbox.moe/ruhl99.png">
 </p>
 
+## 线上的后台接口数据是模拟的 可以随意添加修改删除
+
 #  <a href='http://139.9.77.56:8080/#/login'>线上预览地址</a> 
 
 ## 命令
