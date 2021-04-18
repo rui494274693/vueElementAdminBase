@@ -1,0 +1,103 @@
+//布局栏的配色
+
+$theme-darkGray: #002b36;
+$theme-green: #41b584;
+$theme-white: #ffffff;
+$theme-black: #333333;
+
+
+$theme-bg: $theme-darkGray; //背景色
+$theme-color: $theme-white; // 左侧菜单的字体颜色
+$theme-hover-bg: $theme-green; //左侧菜单移入的背景色
+$theme-hover-color: $theme-white; //左侧菜单移入的字体颜色
+
+$theme-active-bg :$theme-green; //左侧菜单选中的背景色
+$theme-active-color:$theme-white; // 左侧菜单选中的文字颜色
+$theme-top-color :$theme-white; //顶部菜单字体的颜色
+$theme-top-active-color:$theme-green; // 顶部菜单选中字体的颜色
+
+// 顶部左侧系统名称
+.sidebar-logo-container {
+  background: $theme-bg;
+}
+
+// 顶部一级菜单
+.navbar {
+  background: $theme-bg !important;
+}
+
+// 左侧滑动菜单背景色
+.leftMenuScroll {
+  background: $theme-bg !important;
+
+  .el-menu {
+    background: $theme-bg !important;
+
+    .el-menu-item {
+      background: $theme-bg !important;
+
+      &:hover {
+        // 鼠标移入
+        background: $theme-hover-bg !important;
+        color: $theme-hover-color !important;
+
+        i {
+          color: $theme-hover-color !important;
+        }
+      }
+
+      &.is-active {
+        // 选中后
+        background: $theme-active-bg !important;
+        color: $theme-active-color !important;
+      }
+    }
+
+
+    .el-submenu {
+      .el-submenu__title {
+        background: $theme-bg !important;
+
+        &:hover {
+          background: $theme-hover-bg !important;
+          color: $theme-hover-color !important;
+          i {
+            color: $theme-hover-color !important;
+          }
+        }
+      }
+
+    }
+
+    .submenu-title-noDropdown,
+    .el-submenu__title {
+      &:hover {
+        background: $theme-hover-bg !important;
+        color: $theme-hover-color !important;
+      }
+    }
+  }
+}
+
+// 顶部菜单字体的颜色
+.topMenu .el-tabs__nav-next,
+.topMenu .el-tabs__nav-prev {
+  color: $theme-top-color !important;
+}
+
+// 顶部菜单选中字体的颜色
+.topMenu .el-tabs__item.is-active {
+  color: $theme-top-active-color !important;
+}
+
+// 顶部菜单选中下划线的颜色
+.el-tabs__active-bar {
+  background-color: $theme-top-active-color !important;
+}
+// 已打开tag的字体颜色和下划线颜色
+.tags-view-container .tags-view-wrapper .tags-view-item.active{
+    color: $theme-top-active-color !important;
+    &:before{
+        background-color: $theme-top-active-color !important;
+    }
+}

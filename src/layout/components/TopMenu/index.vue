@@ -89,7 +89,7 @@ export default {
   overflow: auto;
   height: 50px;
   vertical-align: middle;
-  background: #304156;
+  /* background: #304156; */
 }
 .wid2 {
   /* width: calc(100vw - 190px); */
