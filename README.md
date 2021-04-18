@@ -1,3 +1,9 @@
+
+
+
+#  <a href='http://139.9.77.56:8080/#/login'>线上预览地址</a> ，后台接口数据是模拟的 可以随意添加修改删除
+
+
 # 此框架基于PanJiaChen大佬的<a target="_blank" href="https://github.com/PanJiaChen/vue-element-admin">vue-element-admin</a>修改而成，在使用前建议先看看大佬的几篇文档<a target="_blank" href="https://juejin.cn/post/6844903476661583880">手摸手，带你用vue撸后台 系列一（基础篇）</a>,文档会帮助你避免掉很多问题！
 <img  src="https://files.catbox.moe/yi2cgv.png">
 
@@ -41,9 +47,7 @@
   <img  src="https://files.catbox.moe/ruhl99.png">
 </p>
 
-## 线上的后台接口数据是模拟的 可以随意添加修改删除
 
-#  <a href='http://139.9.77.56:8080/#/login'>线上预览地址</a> 
 
 ## 命令
 
